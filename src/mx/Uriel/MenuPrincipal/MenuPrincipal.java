@@ -1,14 +1,31 @@
 package mx.Uriel.MenuPrincipal;
 
 import javax.swing.JOptionPane;
+import mx.Uriel.ConvesorDeDivisas.EntradaDeValor;
+import mx.Uriel.ConversorTemperatura.EntradaDeTemperatura;
 
 public class MenuPrincipal
 {
 	public static void main(String[] args)
 	{
-		Object[] TipoConversores = {"Convesor de monedas. ","Conversor de temperatura. "};
+		Object[] TipoConversores = {"Convesor de monedas","Conversor de temperatura"};
 		
-		JOptionPane.showInputDialog(null,"Selecciones una opción de conversión.","Menu"
+		String OpcionSeleccionada = (String) JOptionPane.showInputDialog(null,
+				"Selecciones una opción de conversión.","Menu"
 				,JOptionPane.DEFAULT_OPTION, null, TipoConversores, TipoConversores[0]);
+		
+		if(OpcionSeleccionada != null)
+		{
+			//JOptionPane.showMessageDialog(null,"Elegiste "+OpcionSeleccionada+".");
+			if(OpcionSeleccionada.equals(TipoConversores[0]))
+			{
+				EntradaDeValor.MostrarVentana();
+			}
+			else
+			{
+				EntradaDeTemperatura.MostrarVentanaTemp();
+			}
+				
+		}
 	}
 }
