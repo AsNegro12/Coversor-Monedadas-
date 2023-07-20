@@ -9,6 +9,6 @@ public class MenuPrincipal
 		Object[] TipoConversores = {"Convesor de monedas. ","Conversor de temperatura. "};
 		
 		JOptionPane.showInputDialog(null,"Selecciones una opción de conversión.","Menu"
-				,JOptionPane.QUESTION_MESSAGE, null, TipoConversores, TipoConversores[0]);
+				,JOptionPane.DEFAULT_OPTION, null, TipoConversores, TipoConversores[0]);
 	}
 }
