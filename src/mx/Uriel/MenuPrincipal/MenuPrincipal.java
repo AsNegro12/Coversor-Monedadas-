@@ -6,6 +6,9 @@ public class MenuPrincipal
 {
 	public static void main(String[] args)
 	{
-		JOptionPane.showInputDialog("hola");
+		Object[] TipoConversores = {"Convesor de monedas. ","Conversor de temperatura. "};
+		
+		JOptionPane.showInputDialog(null,"Selecciones una opción de conversión.","Menu"
+				,JOptionPane.QUESTION_MESSAGE, null, TipoConversores, TipoConversores[0]);
 	}
 }
