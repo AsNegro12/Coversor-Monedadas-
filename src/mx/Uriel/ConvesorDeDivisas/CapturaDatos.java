@@ -1,5 +1,7 @@
 package mx.Uriel.ConvesorDeDivisas;
 
+import java.text.DecimalFormat;
+
 public class CapturaDatos
 {
 	private double valorMoneda = 0;
@@ -25,10 +27,11 @@ public class CapturaDatos
 		
 		if(valor <= 4)
 		{
-			resultado = getValorMoneda()/monedas[0];
-			System.out.println("resultado: "+resultado);
-//			System.out.println(valorMoneda);
-//			System.out.println(monedas[valor]);
+			
+			resultado = getValorMoneda()/monedas[valor];
+			
+			DecimalFormat decimalFormat = new DecimalFormat("#.00");
+			System.out.println("Tienes $"+decimalFormat.format(resultado));
 			
 		}
 	}
