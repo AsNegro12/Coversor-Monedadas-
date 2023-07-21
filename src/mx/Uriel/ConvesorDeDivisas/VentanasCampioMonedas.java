@@ -46,31 +46,35 @@ public class VentanasCampioMonedas
 	
 	public void VentanaMonedas()
 	{
-		List<String> opciones = new ArrayList<>();
-        opciones.add("Peso(MXN)");
-        opciones.add("Dolas(USD)");
-        opciones.add("Euro");
-        opciones.add("Libra Esterlina");
-        opciones.add("yen");
-        opciones.add("Won surcoreano");
-        
-        String[] opcionesDeMonedas = opciones.toArray(new String[0]);
-        
-        String opcionSeleccionada = (String) JOptionPane.showInputDialog(
-                null,
-                "Seleccione a la moneda que desea convertir:",
-                "Menú de monedas",
-                JOptionPane.PLAIN_MESSAGE,
-                null,
-                opcionesDeMonedas,
-                opcionesDeMonedas[0] // Opción predeterminada
-        );
-        
-        if (opcionSeleccionada != null)
-        {
-            JOptionPane.showMessageDialog(null, "Opción seleccionada: " 
-            								+ opcionSeleccionada);
-        }
+//		List<String> opciones = new ArrayList<>();
+//      opciones.add("De Pesos(MXN) a Dollar(USD)");
+//      opciones.add("De Pesos(MXN) a Euro");
+//      opciones.add("De Pesos(MXN) a Libra Esterlina");
+//      opciones.add("De Pesos(MXN) a yen");
+//      opciones.add("De Pesos(MXN) a Won surcoreano");
+//		opciones.add("De Dollar(USD) a Pesos(MXN)");
+//      opciones.add("De Euro a Pesos(MXN)");
+//      opciones.add("De Libra Esterlina a Pesos(MXN)");
+//      opciones.add("De Yen a Pesos(MXN)");
+//      opciones.add("De Won Surcoreano a Pesos(MXN)");
+//        
+//        String[] opcionesDeMonedas = opciones.toArray(new String[0]);
+//        
+//        String opcionSeleccionada = (String) JOptionPane.showInputDialog(
+//                null,
+//                "Seleccione a la moneda que desea convertir:",
+//                "Menú de monedas",
+//                JOptionPane.PLAIN_MESSAGE,
+//                null,
+//                opcionesDeMonedas,
+//                opcionesDeMonedas[0] // Opción predeterminada
+//        );
+//        
+//        if (opcionSeleccionada != null)
+//        {
+//            JOptionPane.showMessageDialog(null, "Opción seleccionada: " 
+//            								+ opcionSeleccionada);
+//        }
 	}
 
 }

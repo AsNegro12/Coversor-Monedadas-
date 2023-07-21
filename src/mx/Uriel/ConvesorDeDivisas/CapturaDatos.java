@@ -16,11 +16,22 @@ public class CapturaDatos
 	
 	//dolar(US): 16.65, euro: 18.80, libra: 21.74, yen: 0.12, won: 0.013 valores a 20/jul/2023
 	
-	public void ConversionMonedas(String valor)
+	public void ConversionMonedas(int valor)
 	{
 		//dolar(US): 16.65, euro: 18.80, libra: 21.74, 
 		//yen: 0.12, won: 0.013 valores a 20/jul/2023
 		double[] monedas = {16.65,18.80,21.74,0.12,0.013};
+		
+		double resultado;
+		
+		if(valor <= 4)
+		{
+			resultado = valorMoneda/monedas[valor];
+		}
+		else if(valor > 4 && valor >=  9)
+		{
+			resultado = valorMoneda*monedas[valor];
+		}
 	}
 	
 }
