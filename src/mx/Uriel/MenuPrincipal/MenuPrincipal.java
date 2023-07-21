@@ -2,6 +2,7 @@ package mx.Uriel.MenuPrincipal;
 
 import javax.swing.JOptionPane;
 import mx.Uriel.ConvesorDeDivisas.EntradaDeValor;
+import mx.Uriel.ConvesorDeDivisas.ValorMenorA1Exception;
 import mx.Uriel.ConversorTemperatura.EntradaDeTemperatura;
 
 public class MenuPrincipal
