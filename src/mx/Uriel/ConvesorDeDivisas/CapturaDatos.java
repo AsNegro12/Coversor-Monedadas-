@@ -17,7 +17,7 @@ public class CapturaDatos
 	
 	//dolar(US): 16.65, euro: 18.80, libra: 21.74, yen: 0.12, won: 0.013 valores a 20/jul/2023
 	
-	public void ConversionMonedas(int valor)
+	public void ConversionPesosAOtrasMonedas(int valor)
 	{
 		//dolar(US): 16.65, euro: 18.80, libra: 21.74, 
 		//yen: 0.12, won: 0.013 valores a 20/jul/2023

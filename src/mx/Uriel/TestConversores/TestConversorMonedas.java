@@ -7,7 +7,7 @@ public class TestConversorMonedas {
 		CapturaDatos test = new CapturaDatos();
 		
 		test.setValorMoneda(2000);
-		test.ConversionMonedas(3);
+		test.ConversionPesosAOtrasMonedas(4);
 		
 		
 	}
