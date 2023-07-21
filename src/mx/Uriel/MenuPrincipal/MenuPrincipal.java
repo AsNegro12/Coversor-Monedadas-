@@ -22,7 +22,7 @@ public class MenuPrincipal
 			{
 				
 				VentanasCampioMonedas entradaDeValor = new VentanasCampioMonedas();
-				entradaDeValor.VentanaMonedas();
+				entradaDeValor.MostrarVentana();
 			}
 			else
 			{

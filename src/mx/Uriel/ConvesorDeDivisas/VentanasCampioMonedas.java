@@ -6,9 +6,9 @@ import java.util.*;
 public class VentanasCampioMonedas
 {
 
-	CapturaDatos errorMenorA1 = new CapturaDatos();
-	boolean entraValida = false;
-	double valorMoneda;
+	private CapturaDatos errorMenorA1 = new CapturaDatos();
+	private boolean entraValida = false;
+	private double valorMoneda;
 	
 	public void MostrarVentana()
 	{	
@@ -40,6 +40,8 @@ public class VentanasCampioMonedas
 			
 		}
 		
+		VentanaMonedas();
+		
 	}
 	
 	public void VentanaMonedas()
@@ -50,7 +52,6 @@ public class VentanasCampioMonedas
 				"Selecciones una opción de conversión.","Menu"
 				,JOptionPane.DEFAULT_OPTION, null, TipoConversores, TipoConversores[0]);
 		
-		MostrarVentana();
 	}
 
 }
