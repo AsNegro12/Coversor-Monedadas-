@@ -7,6 +7,7 @@ public class VentanasCampioMonedas
 {
 
 	CapturaDatos errorMenorA1 = new CapturaDatos();
+	ListasConversiones listasM = new ListasConversiones();
 	private boolean entraValida = false;
 	private double valorMoneda;
 	
@@ -45,36 +46,35 @@ public class VentanasCampioMonedas
 	}
 	
 	public void VentanaMonedas()
-	{
-//		List<String> opciones = new ArrayList<>();
-//      opciones.add("De Pesos(MXN) a Dollar(USD)");
-//      opciones.add("De Pesos(MXN) a Euro");
-//      opciones.add("De Pesos(MXN) a Libra Esterlina");
-//      opciones.add("De Pesos(MXN) a yen");
-//      opciones.add("De Pesos(MXN) a Won surcoreano");
-//		opciones.add("De Dollar(USD) a Pesos(MXN)");
-//      opciones.add("De Euro a Pesos(MXN)");
-//      opciones.add("De Libra Esterlina a Pesos(MXN)");
-//      opciones.add("De Yen a Pesos(MXN)");
-//      opciones.add("De Won Surcoreano a Pesos(MXN)");
-//        
-//        String[] opcionesDeMonedas = opciones.toArray(new String[0]);
-//        
-//        String opcionSeleccionada = (String) JOptionPane.showInputDialog(
-//                null,
-//                "Seleccione a la moneda que desea convertir:",
-//                "Menú de monedas",
-//                JOptionPane.PLAIN_MESSAGE,
-//                null,
-//                opcionesDeMonedas,
-//                opcionesDeMonedas[0] // Opción predeterminada
-//        );
-//        
-//        if (opcionSeleccionada != null)
-//        {
-//            JOptionPane.showMessageDialog(null, "Opción seleccionada: " 
-//            								+ opcionSeleccionada);
-//        }
+	{    
+		listasM.listas(0, "De Pesos(MXN) a Dollar(USD)");
+		listasM.listas(1, "De Pesos(MXN) a Euro");
+		listasM.listas(2, "De Pesos(MXN) a Libra Esterlina");
+		listasM.listas(3, "De Pesos(MXN) a Yen");
+		listasM.listas(4, "De Pesos(MXN) a Won surcoreano");
+		listasM.listas(5, "De Dollar(USD) a Pesos(MXN)");
+		listasM.listas(6, "De Pesos(MXN) a Euro");
+		listasM.listas(7, "De Libra Esterlina a Pesos(MXN)");
+		listasM.listas(8, "De Yen a Pesos(MXN)");
+		listasM.listas(9, "De Won Surcoreano a Pesos(MXN)");
+	
+		String[] opcionesArray = listasM.getOpciones().toArray(new String[0]);
+		
+		String opcionSeleccionada = (String) JOptionPane.showInputDialog(
+                null,
+                "Seleccione una opción:",
+                "Menú Desplegable",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                opcionesArray,
+                opcionesArray[0] // Opción predeterminada
+                );
+		
+		if (opcionSeleccionada != null)
+		{
+            JOptionPane.showMessageDialog(null, "Opción seleccionada: " 
+            								+ opcionSeleccionada);
+        }
 	}
 
 }

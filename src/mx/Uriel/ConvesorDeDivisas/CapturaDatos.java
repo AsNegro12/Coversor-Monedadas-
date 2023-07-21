@@ -27,10 +27,7 @@ public class CapturaDatos
 		if(valor <= 4)
 		{
 			resultado = valorMoneda/monedas[valor];
-		}
-		else if(valor > 4 && valor >=  9)
-		{
-			resultado = valorMoneda*monedas[valor];
+			System.out.println(resultado);
 		}
 	}
 	
