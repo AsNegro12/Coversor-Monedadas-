@@ -20,7 +20,7 @@ public class EntradaDeValor
 						"Ingresa la cantidad de dinero que deseas convetir: ",
 						"Entrada de valor",JOptionPane.QUESTION_MESSAGE));
 				
-				ErrorMenorA1 errorMenorA1 = new ErrorMenorA1();
+				CapturaDatos errorMenorA1 = new CapturaDatos();
 				errorMenorA1.errorMenorA1(valorMoneda);
 				
 				

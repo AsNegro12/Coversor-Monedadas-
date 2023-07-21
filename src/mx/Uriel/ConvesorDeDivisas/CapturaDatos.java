@@ -1,6 +1,6 @@
 package mx.Uriel.ConvesorDeDivisas;
 
-public class ErrorMenorA1
+public class CapturaDatos
 {
 	private double valorMoneda = 0;
 	
