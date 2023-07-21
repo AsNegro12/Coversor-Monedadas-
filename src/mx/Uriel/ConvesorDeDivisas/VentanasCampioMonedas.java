@@ -1,12 +1,11 @@
 package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
-import java.util.*;
 
 public class VentanasCampioMonedas
 {
 
-	CapturaDatos errorMenorA1 = new CapturaDatos();
+	CapturaDatos capturaDatos = new CapturaDatos();
 	ListasConversiones listasM = new ListasConversiones();
 	private boolean entraValida = false;
 	private double valorMoneda;
@@ -23,7 +22,8 @@ public class VentanasCampioMonedas
 						"Ingresa la cantidad de dinero que deseas convetir: ",
 						"Entrada de valor",JOptionPane.QUESTION_MESSAGE));
 				
-				errorMenorA1.errorMenorA1(valorMoneda);
+				capturaDatos.errorMenorA1(valorMoneda);
+				capturaDatos.setValorMoneda(valorMoneda);
 				
 				entraValida = true;
 			}
@@ -53,7 +53,7 @@ public class VentanasCampioMonedas
 		listasM.listas(3, "De Pesos(MXN) a Yen");
 		listasM.listas(4, "De Pesos(MXN) a Won surcoreano");
 		listasM.listas(5, "De Dollar(USD) a Pesos(MXN)");
-		listasM.listas(6, "De Pesos(MXN) a Euro");
+		listasM.listas(6, "De Euro a Pesos(MXN)");
 		listasM.listas(7, "De Libra Esterlina a Pesos(MXN)");
 		listasM.listas(8, "De Yen a Pesos(MXN)");
 		listasM.listas(9, "De Won Surcoreano a Pesos(MXN)");
@@ -74,6 +74,7 @@ public class VentanasCampioMonedas
 		{
             JOptionPane.showMessageDialog(null, "Opción seleccionada: " 
             								+ opcionSeleccionada);
+            //System.out.println(capturaDatos.getValorMoneda());
         }
 	}
 

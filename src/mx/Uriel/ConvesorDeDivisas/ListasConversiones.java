@@ -6,19 +6,23 @@ import java.util.List;
 public class ListasConversiones 
 {
 	
-	int valorTem;
 	List<String> opciones = new ArrayList<>();
 	
 	public List<String> getOpciones() {
 		return opciones;
 	}
-
+	
+	public List<String> setOpciones(List<String> opciones) {
+		return opciones;
+	}
 	public void listas(int valor, String moneda)
 	{
-		this.valorTem = valor;
+		int valorTem = valor;
 		opciones.add(moneda);
-		//System.out.println(opciones +" "+valorTem);
+		//System.out.println(opciones+" "+valorTem);
+		
 	}
+	
 	
 	
 }
