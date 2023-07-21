@@ -1,7 +1,7 @@
 package mx.Uriel.MenuPrincipal;
 
 import javax.swing.JOptionPane;
-import mx.Uriel.ConvesorDeDivisas.EntradaDeValor;
+import mx.Uriel.ConvesorDeDivisas.VentanasCampioMonedas;
 import mx.Uriel.ConvesorDeDivisas.ValorMenorA1Exception;
 import mx.Uriel.ConversorTemperatura.EntradaDeTemperatura;
 
@@ -20,7 +20,9 @@ public class MenuPrincipal
 			//JOptionPane.showMessageDialog(null,"Elegiste "+OpcionSeleccionada+".");
 			if(OpcionSeleccionada.equals(TipoConversores[0]))
 			{
-				EntradaDeValor.MostrarVentana();
+				
+				VentanasCampioMonedas entradaDeValor = new VentanasCampioMonedas();
+				entradaDeValor.VentanaMonedas();
 			}
 			else
 			{
