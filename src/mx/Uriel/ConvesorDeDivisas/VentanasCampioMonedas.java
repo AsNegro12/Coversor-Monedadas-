@@ -47,6 +47,7 @@ public class VentanasCampioMonedas
 	
 	public void VentanaMonedas()
 	{    
+		//sera mejor crear otro metodo para las listas.
 		listasM.listas(0, "De Pesos(MXN) a Dollar(USD)");
 		listasM.listas(1, "De Pesos(MXN) a Euro");
 		listasM.listas(2, "De Pesos(MXN) a Libra Esterlina");
