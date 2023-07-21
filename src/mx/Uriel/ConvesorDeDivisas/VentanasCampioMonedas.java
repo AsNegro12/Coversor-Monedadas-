@@ -6,7 +6,7 @@ import java.util.*;
 public class VentanasCampioMonedas
 {
 
-	private CapturaDatos errorMenorA1 = new CapturaDatos();
+	CapturaDatos errorMenorA1 = new CapturaDatos();
 	private boolean entraValida = false;
 	private double valorMoneda;
 	
@@ -46,12 +46,31 @@ public class VentanasCampioMonedas
 	
 	public void VentanaMonedas()
 	{
-		Object[] TipoConversores = {"1","2","3","4","5"};
-		
-		String OpcionSeleccionada = (String) JOptionPane.showInputDialog(null,
-				"Selecciones una opción de conversión.","Menu"
-				,JOptionPane.DEFAULT_OPTION, null, TipoConversores, TipoConversores[0]);
-		
+		List<String> opciones = new ArrayList<>();
+        opciones.add("Peso(MXN)");
+        opciones.add("Dolas(USD)");
+        opciones.add("Euro");
+        opciones.add("Libra Esterlina");
+        opciones.add("yen");
+        opciones.add("Won surcoreano");
+        
+        String[] opcionesDeMonedas = opciones.toArray(new String[0]);
+        
+        String opcionSeleccionada = (String) JOptionPane.showInputDialog(
+                null,
+                "Seleccione a la moneda que desea convertir:",
+                "Menú de monedas",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                opcionesDeMonedas,
+                opcionesDeMonedas[0] // Opción predeterminada
+        );
+        
+        if (opcionSeleccionada != null)
+        {
+            JOptionPane.showMessageDialog(null, "Opción seleccionada: " 
+            								+ opcionSeleccionada);
+        }
 	}
 
 }
