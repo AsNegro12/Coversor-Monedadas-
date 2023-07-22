@@ -15,12 +15,10 @@ public class ListasConversiones
 	public List<String> setOpciones(List<String> opciones) {
 		return opciones;
 	}
-	public void listas(int valor, String moneda)
+	public void listas(String moneda)
 	{
-		int valorTem = valor;
 		opciones.add(moneda);
 		//System.out.println(opciones+" "+valorTem);
-		
 	}
 	
 	
