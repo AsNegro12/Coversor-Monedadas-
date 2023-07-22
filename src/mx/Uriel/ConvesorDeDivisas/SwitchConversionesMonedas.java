@@ -17,19 +17,19 @@ public class SwitchConversionesMonedas
 			break;
 		case "De Pesos(MXN) a Euro":
 			capturaDatos.ConversionPesosAOtrasMonedas(1);
-			capturaDatos.ImprimirResuldado(" Dollares(USD)");
+			capturaDatos.ImprimirResuldado(" Euros");
 			break;
 		case "De Pesos(MXN) a Libra Esterlina":
 			capturaDatos.ConversionPesosAOtrasMonedas(2);
-			capturaDatos.ImprimirResuldado(" Dollares(USD)");
+			capturaDatos.ImprimirResuldado(" Libras Esterlinas");
 			break;
 		case "De Pesos(MXN) a Yen":
 			capturaDatos.ConversionPesosAOtrasMonedas(3);
-			capturaDatos.ImprimirResuldado(" Dollares(USD)");
+			capturaDatos.ImprimirResuldado(" Yenes");
 			break;
 		case "De Pesos(MXN) a Won surcoreano":
 			capturaDatos.ConversionPesosAOtrasMonedas(4);
-			capturaDatos.ImprimirResuldado(" Dollares(USD)");
+			capturaDatos.ImprimirResuldado("Wones surcoreanos");
 			break;
 		 default:
 			 JOptionPane.showMessageDialog(null, " hola");
