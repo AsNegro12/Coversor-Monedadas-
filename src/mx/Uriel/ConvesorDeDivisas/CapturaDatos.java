@@ -1,12 +1,14 @@
 package mx.Uriel.ConvesorDeDivisas;
 
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 
 public class CapturaDatos
 {
 	private double valorMoneda = 0;
 	private double[] monedas = {16.65,18.80,21.74,0.12,0.013};
-	
+	private double resultado;
+
 	public void errorMenorA1(double valor) throws ValorMenorA1Exception
 	{
 		if(valor <= this.valorMoneda)
@@ -25,10 +27,7 @@ public class CapturaDatos
 		
 		if(valor <= 4)
 		{
-			double resultado;
-			resultado = getValorMoneda()/monedas[valor];	
-			DecimalFormat decimalFormat = new DecimalFormat("#.00");
-			System.out.println("Tienes $"+decimalFormat.format(resultado));
+			resultado = getValorMoneda()/monedas[valor];
 		}	
 	}
 	
@@ -36,11 +35,15 @@ public class CapturaDatos
 	{
 		if(valor > 4)
 		{
-			double resultado;
 			resultado = getValorMoneda()*monedas[valor];
-			DecimalFormat decimalFormat = new DecimalFormat("#.00");
-			System.out.println("Tienes $"+decimalFormat.format(resultado));
 		}	
+	}
+	
+	public void ImprimirResuldado(String string)
+	{
+		DecimalFormat decimalFormat = new DecimalFormat("#.00");
+		JOptionPane.showMessageDialog(null, "Tienes: $"+
+		decimalFormat.format(getResultado())+string);
 	}
 
 	public double getValorMoneda() {
@@ -49,6 +52,10 @@ public class CapturaDatos
 
 	public void setValorMoneda(double valorMoneda) {
 		this.valorMoneda = valorMoneda;
+	}
+	
+	public double getResultado() {
+		return resultado;
 	}
 	
 }
