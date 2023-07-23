@@ -53,11 +53,12 @@ public class VentanasCampioMonedas
 		listasM.listas("De Pesos(MXN) a Libra Esterlina");
 		listasM.listas("De Pesos(MXN) a Yen");
 		listasM.listas("De Pesos(MXN) a Won surcoreano");
-//		listasM.listas("De Dollar(USD) a Pesos(MXN)");
-//		listasM.listas("De Euro a Pesos(MXN)");
-//		listasM.listas("De Libra Esterlina a Pesos(MXN)");
-//		listasM.listas("De Yen a Pesos(MXN)");
-//		listasM.listas("De Won Surcoreano a Pesos(MXN)");
+		//
+		listasM.listas("De Dollar(USD) a Pesos(MXN)");
+		listasM.listas("De Euro a Pesos(MXN)");
+		listasM.listas("De Libra Esterlina a Pesos(MXN)");
+		listasM.listas("De Yen a Pesos(MXN)");
+		listasM.listas("De Won Surcoreano a Pesos(MXN)");
 
 		String[] opcionesArray = new String[listasM.getOpciones().size()];
 		opcionesArray = listasM.getOpciones().toArray(opcionesArray);

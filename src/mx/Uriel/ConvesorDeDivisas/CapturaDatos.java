@@ -25,18 +25,12 @@ public class CapturaDatos
 		//dolar(US): 16.65, euro: 18.80, libra: 21.74, 
 		//yen: 0.12, won: 0.013 valores a 20/jul/2023
 		
-		if(valor <= 4)
-		{
-			resultado = getValorMoneda()/monedas[valor];
-		}	
+		resultado = getValorMoneda()/monedas[valor];	
 	}
 	
 	public void ConversorOtrasMonedasAPesos(int valor)
 	{
-		if(valor > 4)
-		{
-			resultado = getValorMoneda()*monedas[valor];
-		}	
+			resultado = getValorMoneda()*monedas[valor];	
 	}
 	
 	public void ImprimirResuldado(String string)

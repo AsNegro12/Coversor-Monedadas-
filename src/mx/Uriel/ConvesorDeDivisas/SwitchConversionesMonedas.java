@@ -29,10 +29,32 @@ public class SwitchConversionesMonedas
 			break;
 		case "De Pesos(MXN) a Won surcoreano":
 			capturaDatos.ConversionPesosAOtrasMonedas(4);
-			capturaDatos.ImprimirResuldado("Wones surcoreanos");
+			capturaDatos.ImprimirResuldado(" Wones surcoreanos");
+			break;
+			//
+			//
+		case "De Dollar(USD) a Pesos(MXN)":
+			capturaDatos.ConversorOtrasMonedasAPesos(0);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
+			break;
+		case "De Euro a Pesos(MXN)":
+			capturaDatos.ConversorOtrasMonedasAPesos(1);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
+			break;
+		case "De Libra Esterlina a Pesos(MXN)":
+			capturaDatos.ConversorOtrasMonedasAPesos(2);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
+			break;
+		case "De Yen a Pesos(MXN)":
+			capturaDatos.ConversorOtrasMonedasAPesos(3);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
+			break;
+		case "De Won Surcoreano a Pesos(MXN)":
+			capturaDatos.ConversorOtrasMonedasAPesos(4);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		 default:
-			 JOptionPane.showMessageDialog(null, " hola");
+			 JOptionPane.showMessageDialog(null, " hola, Se supone que no deverias ver esto.");
 		}
 	}
 }
