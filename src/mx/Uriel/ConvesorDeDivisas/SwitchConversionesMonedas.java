@@ -54,7 +54,8 @@ public class SwitchConversionesMonedas
 			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		 default:
-			 JOptionPane.showMessageDialog(null, " hola, Se supone que no deverias ver esto.");
+			 JOptionPane.showMessageDialog(null, 
+					 " hola, Se supone que no deverias ver esto.");
 		}
 	}
 }
