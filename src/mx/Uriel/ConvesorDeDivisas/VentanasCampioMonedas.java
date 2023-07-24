@@ -2,6 +2,7 @@ package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
 
+import mx.Uriel.MenuPrincipal.CapturaDatos;
 import mx.Uriel.MenuPrincipal.ListasConversiones;
 import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
 
@@ -25,7 +26,7 @@ public class VentanasCampioMonedas
 						"Entrada de valor",JOptionPane.QUESTION_MESSAGE));
 				
 				capturaDatos.errorMenorA1(valorMoneda);
-				capturaDatos.setValorMoneda(valorMoneda);
+				capturaDatos.setValor(valorMoneda);
 				
 				break;
 			}

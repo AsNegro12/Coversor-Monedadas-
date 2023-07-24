@@ -1,19 +1,17 @@
-package mx.Uriel.ConvesorDeDivisas;
+package mx.Uriel.MenuPrincipal;
 
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
-import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
-
 public class CapturaDatos
 {
-	private double valorMoneda = 0;
+	private double valor = 0;
 	private double[] monedas = {16.65,18.80,21.74,0.12,0.013};
 	private double resultado;
 
 	public void errorMenorA1(double valor) throws ValorMenorA1Exception
 	{
-		if(valor <= this.valorMoneda)
+		if(valor <= this.valor)
 		{
 			throw new ValorMenorA1Exception("Solo se permiten valores mayores a 1.");
 		}
@@ -27,12 +25,12 @@ public class CapturaDatos
 		//dolar(US): 16.65, euro: 18.80, libra: 21.74, 
 		//yen: 0.12, won: 0.013 valores a 20/jul/2023
 		
-		resultado = getValorMoneda()/monedas[valor];	
+		resultado = getValor()/monedas[valor];	
 	}
 	
 	public void ConversorOtrasMonedasAPesos(int valor)
 	{
-			resultado = getValorMoneda()*monedas[valor];	
+			resultado = getValor()*monedas[valor];	
 	}
 	
 	public void ImprimirResuldado(String string)
@@ -42,12 +40,12 @@ public class CapturaDatos
 		decimalFormat.format(getResultado())+string);
 	}
 
-	public double getValorMoneda() {
-		return valorMoneda;
+	public double getValor() {
+		return valor;
 	}
 
-	public void setValorMoneda(double valorMoneda) {
-		this.valorMoneda = valorMoneda;
+	public void setValor(double valorMoneda) {
+		this.valor = valorMoneda;
 	}
 	
 	public double getResultado() {

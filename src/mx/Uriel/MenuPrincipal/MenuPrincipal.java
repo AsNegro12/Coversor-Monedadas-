@@ -26,7 +26,8 @@ public class MenuPrincipal
 			}
 			else
 			{
-				EntradaDeTemperatura.MostrarVentanaTemp();
+				EntradaDeTemperatura entradaDeTemperatura = new EntradaDeTemperatura();
+				entradaDeTemperatura.MostrarVentanaTemp();
 			}
 				
 		}
