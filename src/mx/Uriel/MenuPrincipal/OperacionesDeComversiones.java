@@ -3,7 +3,7 @@ package mx.Uriel.MenuPrincipal;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
-public class CapturaDatos
+public class OperacionesDeComversiones
 {
 	private double valor = 0;
 	private double[] monedas = {16.65,18.80,21.74,0.12,0.013};

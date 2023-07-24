@@ -1,13 +1,13 @@
 package mx.Uriel.ConversorTemperatura;
 
 import javax.swing.JOptionPane;
-import mx.Uriel.MenuPrincipal.CapturaDatos;
+import mx.Uriel.MenuPrincipal.OperacionesDeComversiones;
 import mx.Uriel.MenuPrincipal.GeneradorDeListas;
 import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
 
 public class EntradaDeTemperatura
 {
-	CapturaDatos capturaDatos = new CapturaDatos();
+	OperacionesDeComversiones capturaDatos = new OperacionesDeComversiones();
 	private double valorTemperatura;
 	
 	public void MostrarVentanaTemp()

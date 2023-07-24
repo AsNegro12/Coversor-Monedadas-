@@ -2,13 +2,13 @@ package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
 
-import mx.Uriel.MenuPrincipal.CapturaDatos;
+import mx.Uriel.MenuPrincipal.OperacionesDeComversiones;
 
 public class SwitchConversionesMonedas
 {
 	public void switchConversiones(String string,double valor)
 	{
-		CapturaDatos capturaDatos = new CapturaDatos();
+		OperacionesDeComversiones capturaDatos = new OperacionesDeComversiones();
 		capturaDatos.setValor(valor);
 		
 		switch(string)

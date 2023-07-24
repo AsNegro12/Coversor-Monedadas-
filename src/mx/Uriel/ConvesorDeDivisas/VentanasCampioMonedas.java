@@ -2,14 +2,14 @@ package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
 
-import mx.Uriel.MenuPrincipal.CapturaDatos;
+import mx.Uriel.MenuPrincipal.OperacionesDeComversiones;
 import mx.Uriel.MenuPrincipal.GeneradorDeListas;
 import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
 
 public class VentanasCampioMonedas
 {
 
-	CapturaDatos capturaDatos = new CapturaDatos();
+	OperacionesDeComversiones capturaDatos = new OperacionesDeComversiones();
 	private double valorMoneda;
 	
 	public void MostrarVentana()
