@@ -6,6 +6,19 @@ public class DeseasHacerOtraTransaccion
 {
 	public void VentanaDeseasContinuar()
 	{
-		JOptionPane.showOptionDialog(null, getClass(), null, 0, 0, null, null, getClass());
+		int respuesta = JOptionPane.showOptionDialog(null,
+				"¿Deseas hacer otra Conversión?",
+				"Confirmar salida", JOptionPane.YES_NO_OPTION,
+				JOptionPane.INFORMATION_MESSAGE, null, null, getClass());
+		
+		if(respuesta == JOptionPane.YES_OPTION)
+		{
+			JOptionPane.showMessageDialog(null,"Ok");
+			
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null,"Programa terminado");
+		}
 	}
 }

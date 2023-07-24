@@ -1,6 +1,7 @@
 package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
+import mx.Uriel.MenuPrincipal.DeseasHacerOtraTransaccion;
 
 public class VentanasCampioMonedas
 {

@@ -29,5 +29,8 @@ public class MenuPrincipal
 			}
 				
 		}
+		
+		DeseasHacerOtraTransaccion DHOT = new DeseasHacerOtraTransaccion();
+		DHOT.VentanaDeseasContinuar();
 	}
 }
