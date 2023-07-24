@@ -3,7 +3,7 @@ package mx.Uriel.MenuPrincipal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListasConversiones 
+public class GeneradorDeListas 
 {
 	
 	List<String> opciones = new ArrayList<>();

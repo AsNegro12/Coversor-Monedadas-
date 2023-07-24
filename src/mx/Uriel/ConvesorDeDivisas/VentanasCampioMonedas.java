@@ -3,7 +3,7 @@ package mx.Uriel.ConvesorDeDivisas;
 import javax.swing.JOptionPane;
 
 import mx.Uriel.MenuPrincipal.CapturaDatos;
-import mx.Uriel.MenuPrincipal.ListasConversiones;
+import mx.Uriel.MenuPrincipal.GeneradorDeListas;
 import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
 
 public class VentanasCampioMonedas
@@ -50,7 +50,7 @@ public class VentanasCampioMonedas
 	
 	public void VentanaMonedas()
 	{    
-		ListasConversiones listasM = new ListasConversiones();
+		GeneradorDeListas listasM = new GeneradorDeListas();
 		
 		listasM.listas("De Pesos(MXN) a Dollar(USD)");
 		listasM.listas("De Pesos(MXN) a Euro");
