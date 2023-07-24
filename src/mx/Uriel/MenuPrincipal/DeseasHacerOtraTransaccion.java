@@ -6,19 +6,27 @@ public class DeseasHacerOtraTransaccion
 {
 	public void VentanaDeseasContinuar()
 	{
-		int respuesta = JOptionPane.showOptionDialog(null,
-				"¿Deseas hacer otra Conversión?",
-				"Confirmar salida", JOptionPane.YES_NO_OPTION,
-				JOptionPane.INFORMATION_MESSAGE, null, null, getClass());
-		
-		if(respuesta == JOptionPane.YES_OPTION)
+		while(true)
 		{
-			JOptionPane.showMessageDialog(null,"Ok");
+			int respuesta = JOptionPane.showOptionDialog(null,
+					"¿Deseas hacer otra Conversión?",
+					"Confirmar salida", JOptionPane.YES_NO_OPTION,
+					JOptionPane.INFORMATION_MESSAGE, null, 
+					new Object[]{"Sí", "No"}, "Sí");
 			
-		}
-		else
-		{
-			JOptionPane.showMessageDialog(null,"Programa terminado");
+			boolean flag = false;
+			
+			if(respuesta == JOptionPane.YES_OPTION)
+			{
+				
+					MenuPrincipal menu = new MenuPrincipal();
+					menu.VentanaMenuPrincipal();
+			}
+			else
+			{
+				JOptionPane.showMessageDialog(null,"Programa terminado");
+				break;
+			}
 		}
 	}
 }

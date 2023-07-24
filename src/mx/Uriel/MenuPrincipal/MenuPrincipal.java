@@ -1,12 +1,13 @@
 package mx.Uriel.MenuPrincipal;
 
 import javax.swing.JOptionPane;
-import mx.Uriel.ConvesorDeDivisas.VentanasCampioMonedas;
+
 import mx.Uriel.ConversorTemperatura.EntradaDeTemperatura;
+import mx.Uriel.ConvesorDeDivisas.VentanasCampioMonedas;
 
 public class MenuPrincipal
 {
-	public static void main(String[] args)
+	public void VentanaMenuPrincipal()
 	{
 		Object[] TipoConversores = {"Convesor de monedas","Conversor de temperatura"};
 		
@@ -29,8 +30,5 @@ public class MenuPrincipal
 			}
 				
 		}
-		
-		DeseasHacerOtraTransaccion DHOT = new DeseasHacerOtraTransaccion();
-		DHOT.VentanaDeseasContinuar();
 	}
 }
