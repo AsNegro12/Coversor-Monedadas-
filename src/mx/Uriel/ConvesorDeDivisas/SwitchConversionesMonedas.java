@@ -2,58 +2,58 @@ package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
 
-import mx.Uriel.MenuPrincipal.*;
+import mx.Uriel.MenuPrincipal.CapturaDatos;
 
 public class SwitchConversionesMonedas
 {
 	public void switchConversiones(String string,double valor)
 	{
-		OperacionesConversion OC = new OperacionesConversion();
-		OC.setValor(valor);
+		CapturaDatos capturaDatos = new CapturaDatos();
+		capturaDatos.setValor(valor);
 		
 		switch(string)
 		{
 		case "De Pesos(MXN) a Dollar(USD)":
-			OC.ConversionPesosAOtrasMonedas(0);
-			OC.ImprimirResuldado(" Dollares(USD)");
+			capturaDatos.ConversionPesosAOtrasMonedas(0);
+			capturaDatos.ImprimirResuldado(" Dollares(USD)");
 			break;
 		case "De Pesos(MXN) a Euro":
-			OC.ConversionPesosAOtrasMonedas(1);
-			OC.ImprimirResuldado(" Euros");
+			capturaDatos.ConversionPesosAOtrasMonedas(1);
+			capturaDatos.ImprimirResuldado(" Euros");
 			break;
 		case "De Pesos(MXN) a Libra Esterlina":
-			OC.ConversionPesosAOtrasMonedas(2);
-			OC.ImprimirResuldado(" Libras Esterlinas");
+			capturaDatos.ConversionPesosAOtrasMonedas(2);
+			capturaDatos.ImprimirResuldado(" Libras Esterlinas");
 			break;
 		case "De Pesos(MXN) a Yen":
-			OC.ConversionPesosAOtrasMonedas(3);
-			OC.ImprimirResuldado(" Yenes");
+			capturaDatos.ConversionPesosAOtrasMonedas(3);
+			capturaDatos.ImprimirResuldado(" Yenes");
 			break;
 		case "De Pesos(MXN) a Won surcoreano":
-			OC.ConversionPesosAOtrasMonedas(4);
-			OC.ImprimirResuldado(" Wones surcoreanos");
+			capturaDatos.ConversionPesosAOtrasMonedas(4);
+			capturaDatos.ImprimirResuldado(" Wones surcoreanos");
 			break;
 			//
 			//
 		case "De Dollar(USD) a Pesos(MXN)":
-			OC.ConversorOtrasMonedasAPesos(0);
-			OC.ImprimirResuldado(" Pesos(MXN)");
+			capturaDatos.ConversorOtrasMonedasAPesos(0);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		case "De Euro a Pesos(MXN)":
-			OC.ConversorOtrasMonedasAPesos(1);
-			OC.ImprimirResuldado(" Pesos(MXN)");
+			capturaDatos.ConversorOtrasMonedasAPesos(1);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		case "De Libra Esterlina a Pesos(MXN)":
-			OC.ConversorOtrasMonedasAPesos(2);
-			OC.ImprimirResuldado(" Pesos(MXN)");
+			capturaDatos.ConversorOtrasMonedasAPesos(2);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		case "De Yen a Pesos(MXN)":
-			OC.ConversorOtrasMonedasAPesos(3);
-			OC.ImprimirResuldado(" Pesos(MXN)");
+			capturaDatos.ConversorOtrasMonedasAPesos(3);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		case "De Won Surcoreano a Pesos(MXN)":
-			OC.ConversorOtrasMonedasAPesos(4);
-			OC.ImprimirResuldado(" Pesos(MXN)");
+			capturaDatos.ConversorOtrasMonedasAPesos(4);
+			capturaDatos.ImprimirResuldado(" Pesos(MXN)");
 			break;
 		 default:
 			 JOptionPane.showMessageDialog(null, 
