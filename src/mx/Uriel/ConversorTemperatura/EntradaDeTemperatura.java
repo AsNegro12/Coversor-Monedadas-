@@ -38,5 +38,27 @@ public class EntradaDeTemperatura
 			}
 		}
 		
+		VentanaTipoTemperaduras();
+		
+	}
+	
+	public void VentanaTipoTemperaduras()
+	{
+		GeneradorDeListas listasT = new GeneradorDeListas();
+		
+		listasT.listas("Celisius a Farenheit");
+		listasT.listas("Celisius a Kelvin");
+		listasT.listas("Farenheit a Celsius");
+		listasT.listas("Farenheit a Kelvin");
+		listasT.listas("Kelvin a Celisius");
+		listasT.listas("Kelvin a Farenheit");
+		
+		String[] opcionesArray = new String[listasT.getOpciones().size()];
+		opcionesArray = listasT.getOpciones().toArray(opcionesArray);
+			
+		String opcionSeleccionada = (String) JOptionPane.showInputDialog(
+				null,"Seleccione una opción:",
+                "Menú Desplegable",JOptionPane.PLAIN_MESSAGE,
+                null,opcionesArray,opcionesArray[0]);
 	}
 }
