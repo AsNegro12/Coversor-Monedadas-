@@ -1,4 +1,4 @@
-package mx.Uriel.ConvesorDeDivisas;
+package mx.Uriel.MenuPrincipal;
 
 import java.util.ArrayList;
 import java.util.List;

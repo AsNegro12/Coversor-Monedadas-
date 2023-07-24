@@ -3,6 +3,8 @@ package mx.Uriel.ConvesorDeDivisas;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
+import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
+
 public class CapturaDatos
 {
 	private double valorMoneda = 0;

@@ -1,4 +1,4 @@
-package mx.Uriel.ConvesorDeDivisas;
+package mx.Uriel.MenuPrincipal;
 
 public class ValorMenorA1Exception extends Exception
 {

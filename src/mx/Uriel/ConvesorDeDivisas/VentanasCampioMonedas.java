@@ -1,20 +1,22 @@
 package mx.Uriel.ConvesorDeDivisas;
 
 import javax.swing.JOptionPane;
-import mx.Uriel.MenuPrincipal.DeseasHacerOtraTransaccion;
+
+import mx.Uriel.MenuPrincipal.ListasConversiones;
+import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
 
 public class VentanasCampioMonedas
 {
 
 	CapturaDatos capturaDatos = new CapturaDatos();
-	private boolean entraValida = false;
 	private double valorMoneda;
 	
 	public void MostrarVentana()
 	{	
 		//El tipo de divisa que uso como base para convertir es el peso mexicano
 		
-		while(!entraValida)
+		//Este while permite ciclar el programa mientras ocurra un error.
+		while(true)
 		{
 			try
 			{
@@ -25,7 +27,7 @@ public class VentanasCampioMonedas
 				capturaDatos.errorMenorA1(valorMoneda);
 				capturaDatos.setValorMoneda(valorMoneda);
 				
-				entraValida = true;
+				break;
 			}
 			catch (NumberFormatException e)
 			{
