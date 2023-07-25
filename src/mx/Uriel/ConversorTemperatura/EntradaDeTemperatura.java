@@ -60,5 +60,8 @@ public class EntradaDeTemperatura
 				null,"Seleccione una opción:",
                 "Menú Desplegable",JOptionPane.PLAIN_MESSAGE,
                 null,opcionesArray,opcionesArray[0]);
+		
+		SwitchConversorTemperatura ST = new SwitchConversorTemperatura();
+		ST.switchConversorTemperatura(opcionSeleccionada, valorTemperatura);
 	}
 }

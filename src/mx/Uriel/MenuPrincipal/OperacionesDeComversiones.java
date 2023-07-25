@@ -8,6 +8,7 @@ public class OperacionesDeComversiones
 	private double valor = 0;
 	private double[] monedas = {16.65,18.80,21.74,0.12,0.013};
 	private double resultado;
+	private String es;
 
 	public void errorMenorA1(double valor) throws ValorMenorA1Exception
 	{
@@ -33,10 +34,19 @@ public class OperacionesDeComversiones
 			resultado = getValor()*monedas[valor];	
 	}
 	
-	public void ImprimirResuldado(String string)
+	public void ImprimirResuldado(String string, boolean valor)
 	{
+		
+		if(valor == false)
+		{
+			es = "Tienes: $";
+		}
+		else
+		{
+			es = "Son: ";
+		}
 		DecimalFormat decimalFormat = new DecimalFormat("#.00");
-		JOptionPane.showMessageDialog(null, "Tienes: $"+
+		JOptionPane.showMessageDialog(null, es +
 		decimalFormat.format(getResultado())+string);
 	}
 
