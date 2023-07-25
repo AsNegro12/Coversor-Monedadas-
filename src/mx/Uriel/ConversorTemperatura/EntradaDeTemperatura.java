@@ -3,7 +3,6 @@ package mx.Uriel.ConversorTemperatura;
 import javax.swing.JOptionPane;
 import mx.Uriel.MenuPrincipal.OperacionesDeComversiones;
 import mx.Uriel.MenuPrincipal.GeneradorDeListas;
-import mx.Uriel.MenuPrincipal.ValorMenorA1Exception;
 
 public class EntradaDeTemperatura
 {
