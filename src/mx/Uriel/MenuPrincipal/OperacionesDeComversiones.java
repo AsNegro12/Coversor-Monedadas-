@@ -34,6 +34,36 @@ public class OperacionesDeComversiones
 			resultado = getValor()*monedas[valor];	
 	}
 	
+	public void CelsiusAFarenheit(double valor)
+	{
+		resultado = ((getValor()*9)/5)+32;
+	}
+	
+	public void CelsiusAKelvin(double valor)
+	{
+		resultado = getValor()+273.15;
+	}
+	
+	public void FarenheitACelsius(double valor)
+	{
+		resultado = ((getValor()-32)*5)/9;
+	}
+	
+	public void FarenheitAKelvin(double valor)
+	{
+		resultado = (((getValor()-32)*5)/9)+273.15;
+	}
+	
+	public void KelvinACelsius(double valor)
+	{
+		resultado = getValor()-273.15;
+	}
+	
+	public void KelvinAFarenheit(double valor)
+	{
+		resultado = (((getValor()-273.15)*9)/5)+32;
+	}
+	
 	public void ImprimirResuldado(String string, boolean valor)
 	{
 		

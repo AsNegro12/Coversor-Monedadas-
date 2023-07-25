@@ -14,22 +14,28 @@ public class SwitchConversorTemperatura
 		switch(string)
 		{
 			case "Celisius a Farenheit":
+				capturaDatos.CelsiusAFarenheit(valor);
 				capturaDatos.ImprimirResuldado(" Farenheit", true);
 				break;
 			case "Celisius a Kelvin":
+				capturaDatos.CelsiusAKelvin(valor);
 				capturaDatos.ImprimirResuldado(" Kelvin", true);
 				break;
 			case "Farenheit a Celsius":
-				capturaDatos.ImprimirResuldado(" Kelvin", true);
+				capturaDatos.FarenheitACelsius(valor);
+				capturaDatos.ImprimirResuldado(" Celsius", true);
 				break;
 			case "Farenheit a Kelvin":
+				capturaDatos.FarenheitAKelvin(valor);
 				capturaDatos.ImprimirResuldado(" Kelvin", true);
 				break;
 			case "Kelvin a Celisius":
-				capturaDatos.ImprimirResuldado(" Kelvin", true);
+				capturaDatos.KelvinACelsius(valor);
+				capturaDatos.ImprimirResuldado(" Celsius", true);
 				break;
 			case "Kelvin a Farenheit":
-				capturaDatos.ImprimirResuldado(" Kelvin", true);
+				capturaDatos.KelvinAFarenheit(valor);
+				capturaDatos.ImprimirResuldado(" Farenheit", true);
 				break;
 			default:
 				JOptionPane.showMessageDialog(null, 
